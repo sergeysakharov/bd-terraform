@@ -9,9 +9,11 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "terraform-state-bucket"
+    bucket = "terraform-state-ss-test"
     key    = "state/terraform_state.tfstate"
     region = "us-east-1"
+    access_key = "AKIAWCLIJRXFMEUJNEHO"
+    secret_key = "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"
   }
 }
 
